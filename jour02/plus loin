@@ -1,0 +1,17 @@
+def fct(a,b,c):
+    if a!=0 and b!=0 and c!=0:
+        if a==b==c:
+             return ("isocel")
+        elif a==b!=c or a!=b==c or a==c!=b:
+              return ("équilatéral")
+        elif (a**2+b**2==c**2)or(a**2+c**2==b**2)or(b**2+c**2==a**2):
+              return ("rectangle")
+        else:
+            return ("quelconque")
+    else:
+        return ("error")
+print(fct(5,4,3))
+print(fct(4,4,3))
+print(fct(5,4,2))
+print(fct(3,3,3))
+print(fct(0,3,4))
